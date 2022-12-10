@@ -1,0 +1,112 @@
+.theme-wrapper{
+    height: 100vh;
+}
+.wrapper{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.sidebar{
+    background: #5650d9;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.user-info img{
+    width: 30px;
+    height: 30px;
+    background: #fefefe;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.sidebar .nav-panel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar .nav-panel a{
+    margin-bottom: 15px;
+}
+.visual{
+    width: calc(100% - 250px);
+    max-width: 100%;
+    overflow-y: auto;
+}
+.tumblr{
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    background: #000;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    position: relative;
+}
+.tumblr:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #ffffff;
+    transition: .8s;
+}
+.dark-theme .tumblr:before{
+    transform: translate(14px,0);
+}
+.theme-change{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.discover .header{
+    background: #ffb5a7;
+    height: 200px;
+    width: 100%;
+    color: var(--secondary-color);
+}
+.discover .playlists{
+    overflow: auto;
+    color: var(--secondary-color);
+}
+.discover .playlist {
+    display: flex;
+}
+.discover .playlist .card{
+    margin-right: 20px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.discover .playlist .card img{
+    width: 100%;
+}
+.search{
+    color: var(--secondary-color);
+}
+.search .playlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search .playlist .card{
+    margin-right: 20px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.search .playlist .card img{
+    width: 100%;
+}
